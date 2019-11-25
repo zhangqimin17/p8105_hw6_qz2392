@@ -143,6 +143,8 @@ boot_straps %>%
   )
 ```
 
+The distribution of $\hat r^2$ looks little bit left skewed, but generally normal with mean at around 0.913.
+
 Plot the distribution of $log(\hat\beta_0 \times \hat\beta_1)$.
 ```{r}
 boot_straps %>% 
@@ -161,6 +163,7 @@ boot_straps %>%
   )
 ```
 
+The distribution of $log(\hat\beta_0 \times \hat\beta_1)$ looks little bit left skewed, but generally normal with mean at around 2.01.
 
 ```{r}
 boot_straps %>% 
