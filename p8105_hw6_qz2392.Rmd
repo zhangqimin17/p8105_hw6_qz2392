@@ -43,13 +43,13 @@ birthweight %>%
   add_predictions(reg) %>% 
   add_residuals(reg) %>% 
   ggplot(aes(x = pred, y = resid)) +
-  geom_point() +
+  geom_point(alpha = .3) +
   labs(
     titles = "Residuals VS fitted values"
   )
 ```
 
-The plot is centered around 0 with some outliers on the left.
+The plot is centered around 0 with some outliers on the left and top-left.
 
 ```{r}
 lm(bwt ~ blength + gaweeks, data = birthweight) %>% 
